@@ -74,9 +74,5 @@ export default {
 </script>
 
 <style>
-#card-right {
-    /* float: right;
-    height: 600px;
-    width: 200px; */
-}
+
 </style>
