@@ -1,17 +1,15 @@
 <template>
-<div class="card text-center" id="card">
+  <div class="card text-center" id="card">
     <!-- title -->
     <titleComponent />
 
     <!-- mess -->
-    <mess />
+    <mess/>
 
     <!-- send -->
-    <send @sendMessenger="messenger"/>
-    <div>
-        
-    </div>
-</div>
+    <send />
+    <div></div>
+  </div>
 </template>
 
 <script>
@@ -20,23 +18,28 @@ import mess from "./messenger.vue";
 import send from "./send.vue";
 
 export default {
-    data() {
-        return {
-            messenger: "",
-        }
-    },
-    components: {
-        titleComponent,
-        mess,
-        send,
-    }
-}
+  data() {
+    return {
+      mess: "",
+    };
+  },
+
+  components: {
+    titleComponent,
+    mess,
+    send,
+  },
+
+  methods: {
+    
+  },
+};
 </script>
 
 <style>
-#card{
-    width: 900px;
-    height: 600px;
-    float: left;
+#card {
+  width: 90vw;
+  height: 90vh;
+  /* float: left; */
 }
 </style>

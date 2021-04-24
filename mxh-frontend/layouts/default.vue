@@ -1,17 +1,17 @@
 <template>
-<div>
-    <div class="card">
+  <div>
+    <Nuxt />
+    <!-- <div class="card">
         <div class="card-body">
-            <Nuxt />
+            
         </div>
-    </div>
-</div>
+    </div> -->
+  </div>
 </template>
 
 <script>
-export default ({})
+export default {};
 </script>
 
 <style>
-
 </style>

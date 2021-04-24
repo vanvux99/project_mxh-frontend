@@ -9,7 +9,8 @@ export const ACCOUNT = {
 export const messenger = {
     id: 0,
     content: "",
-    times: ""
+    times: "",
+    accounts_id: 0,
 }
 
 //#endregion

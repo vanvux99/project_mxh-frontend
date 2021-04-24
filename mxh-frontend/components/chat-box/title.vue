@@ -1,6 +1,6 @@
 <template>
 <div class="card-header" id="card-header">
-    Featured
+    TEST CHAT BOX
 </div>
 </template>
 

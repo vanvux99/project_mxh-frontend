@@ -11,8 +11,9 @@
         :value="mess.Content"
         readonly
       />
-      <br />
+      <br /> 
     </div>
+
   </div>
 </template>
 
@@ -22,7 +23,7 @@ import axios from "axios";
 import { getAllAccounts } from "../../const/index.js";
 
 export default {
-  props: ["returnMess"],
+  // props: ["returnMess"],
   data() {
     return {
       messengers: [],
@@ -41,6 +42,7 @@ export default {
         .get("https://localhost:44367/api/Messenger")
         .then((response) => {
           this.messengers = response.data;
+          // console.log(this.messengers.Content);
         })
         .catch((err) => {
           //console.log(err);
@@ -61,7 +63,7 @@ export default {
     changeAccountByID(id) {
       const findAccount = this.accounts.find((item) => item.ID === id);
       // console.log(findAccount);
-      return findAccount ? findAccount.Name : ""
+      return findAccount ? findAccount.Name : "";
     },
   },
 };
